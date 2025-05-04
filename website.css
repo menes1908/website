@@ -5,13 +5,73 @@ font-family: Arial, Helvetica, sans-serif;
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-scroll-behavior: smooth;
 align-items: center;
 
 }
 body {
     background: url('images/legit light.jpg') no-repeat center center fixed;
     background-size: cover; 
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #E76F51; /* Background color for the loading screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it stays above all other elements */
+    opacity: 1; /* Fully visible by default */
+    transition: opacity 0.5s ease; /* Smooth fade-out transition */
+}
+
+#loading-screen.dark-mode{
+    background-color: #001f3f; /* Dark mode background color */
+}
+
+/* Dots Animation */
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dots span {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff; /* Dot color */
+    border-radius: 50%;
+    animation: scaleDots 1.5s infinite ease-in-out;
+}
+
+.dots span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Keyframes for Scaling Dots */
+@keyframes scaleDots {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
 }
 
 /* navigation bar */
@@ -1599,6 +1659,11 @@ textarea.dark-mode:focus {
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
+    .dots span {
+        width: 20px; /* Adjust dot size */
+        height: 20px;
+        gap: 8px; /* Adjust spacing between dots */
+    }
 
     /* HOME SECTION */
     #home {
@@ -1826,6 +1891,11 @@ textarea.dark-mode:focus {
 
 @media only screen and (max-width: 768px) and (min-width: 426px) {
 
+    .dots span {
+        width: 15px; /* Adjust dot size */
+        height: 15px;
+        gap: 6px; /* Adjust spacing between dots */
+    }
 
     /* home */
     #home{
@@ -2068,6 +2138,12 @@ textarea.dark-mode:focus {
 
 /* LARGE PHONE */
 @media only screen and (max-width: 425px) {
+
+    .dots span {
+        width: 10px; /* Adjust dot size */
+        height: 10px;
+        gap: 4px; /* Adjust spacing between dots */
+    }
 
     /* Home Section */
     #home {

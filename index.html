@@ -24,6 +24,15 @@
     </head>
 
     <body >
+
+        <div id="loading-screen">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
         <!-- NAV BAR //--->
         <header>
             <nav class="navbar navbar-expand-lg">
@@ -418,7 +427,7 @@
         <script> 
             function enableDarkMode() {
                 document.body.classList.add('dark-mode');
-                document.querySelectorAll('section, header, footer, .nav-link, .navi, #dark-mode-toggle, .card-title, .form-control, textarea, label, .submit-btn, .social-link, .timeline, .skill-circle, .contact-main, .caption, .logo, .image-background1,.image-background2, #home-image, #text-animation-container, #text-animation, .animated-button, #about-row,#about-row h2, #about-image, .skills-background1, .skills-background2, .timeline, .circle, .timeline ul li, .card-title, #contact-container, .contact-wrapper, .contact-main').forEach(el => {
+                document.querySelectorAll('section, header, footer, .nav-link, .navi, #dark-mode-toggle, .card-title, .form-control, textarea, label, .submit-btn, .social-link, .timeline, .skill-circle, .contact-main, .caption, .logo, .image-background1,.image-background2, #home-image, #text-animation-container, #text-animation, .animated-button, #about-row,#about-row h2, #about-image, .skills-background1, .skills-background2, .timeline, .circle, .timeline ul li, .card-title, #contact-container, .contact-wrapper, .contact-main, #loading-screen').forEach(el => {
                     el.classList.add('dark-mode');
                 });
                 document.getElementById('dark-mode-toggle').innerHTML = '<i class="bi bi-brightness-high-fill"></i>';
@@ -427,7 +436,7 @@
             
             function disableDarkMode() {
                 document.body.classList.remove('dark-mode');
-                document.querySelectorAll('section, header, footer, .nav-link, .navi, #dark-mode-toggle, .card-title, .form-control, textarea, label, .submit-btn, .social-link, .timeline, .skill-circle, .contact-main, .caption, .logo, .image-background1,.image-background2, #home-image, #text-animation-container, #text-animation, .animated-button, #about-row,#about-row h2, #about-image, .skills-background1, .skills-background2, .timeline, .circle, .timeline ul li, .card-title, #contact-container, .contact-wrapper, .contact-main').forEach(el => {
+                document.querySelectorAll('section, header, footer, .nav-link, .navi, #dark-mode-toggle, .card-title, .form-control, textarea, label, .submit-btn, .social-link, .timeline, .skill-circle, .contact-main, .caption, .logo, .image-background1,.image-background2, #home-image, #text-animation-container, #text-animation, .animated-button, #about-row,#about-row h2, #about-image, .skills-background1, .skills-background2, .timeline, .circle, .timeline ul li, .card-title, #contact-container, .contact-wrapper, .contact-main, #loading-screen').forEach(el => {
                     el.classList.remove('dark-mode');
                 });
                 document.getElementById('dark-mode-toggle').innerHTML = '<i class="bi bi-moon-stars-fill"></i>';
@@ -557,6 +566,22 @@ homeImage.addEventListener('click', () => {
                         document.querySelector('form').reset();
                     }
                 });
+            });
+        </script>
+
+        <!-- loading screen -->
+        <script>
+            // Wait for the entire page to load
+            window.addEventListener('load', function () {
+                const loadingScreen = document.getElementById('loading-screen');
+                
+                // Keep the loading screen visible for 3 seconds
+                setTimeout(() => {
+                    loadingScreen.style.opacity = '0'; // Fade out the loading screen
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none'; // Remove it from the DOM
+                    }, 500); // Wait for the fade-out animation to complete
+                }, 3000); // 3-second delay
             });
         </script>
 
