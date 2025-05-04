@@ -1652,6 +1652,42 @@ textarea.dark-mode:focus {
 
 /* BACKGROUND ANIMATION */
 
+/* Parallax Star Background for Dark Mode */
+body.dark-mode::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -2; /* Place it behind all content */
+}
+
+body.dark-mode::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    animation: moveStars 50s linear infinite; /* Smooth parallax effect */
+    z-index: -1; /* Place it behind all content but above the background */
+    opacity: 0.8; /* Increase opacity for brighter stars */
+    filter: brightness(1.5); /* Make stars brighter */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Add glow effect */
+}
+
+/* Keyframes for Parallax Star Movement */
+@keyframes moveStars {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
 
 /* RESPONSIVENESS */
 
