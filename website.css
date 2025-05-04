@@ -1925,7 +1925,7 @@ body.dark-mode::after {
 
 /* TABLET */
 
-@media only screen and (max-width: 768px) and (min-width: 426px) {
+@media only screen and (max-width: 768px) and (min-width: 551px) {
 
     .dots span {
         width: 15px; /* Adjust dot size */
@@ -2173,7 +2173,7 @@ body.dark-mode::after {
 
 
 /* LARGE PHONE */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 550px) {
 
     .dots span {
         width: 10px; /* Adjust dot size */
