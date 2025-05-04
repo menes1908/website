@@ -50,3 +50,28 @@ This project is a **personal website** designed to showcase my skills, projects,
 1. **Clone the Repository**:
    ```bash
    git clone https://menes1908.github.io/website/
+
+2. **Navigate to the Project Directory**:
+cd website
+
+3. **Open the Project**:
+- Open the index.html file in your browser to view the website.
+
+## **Instructions for Viewing**
+1. Ensure you have an internet connection to load external libraries (e.g., Bootstrap, SweetAlert2).
+2. Open the website in any modern browser (e.g., Chrome, Firefox, Edge).
+3. For the best experience:
+        - View the website on different devices (laptop, tablet, mobile) to see its responsiveness.
+        - Toggle the dark mode feature to explore the interactive glow effects.
+
+**Additional Notes**
+- The website is fully responsive and optimized for various screen sizes, including laptops, tablets, and mobile devices.
+- The contact form includes validation and a confirmation popup using SweetAlert2.
+- Social media links are functional and open in new tabs.
+
+**Contact**
+If you have any questions or suggestions, feel free to reach out:
+
+Email: jmbmaines17@gmail.com
+Phone: 0991-878-4260 | 0956-067-0720
+GitHub: menes1908
