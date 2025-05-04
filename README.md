@@ -9,19 +9,19 @@ This project is a **personal website** designed to showcase my skills, projects,
 ### **1. Home Section**
 - Dynamic typing animation introducing your name and aliases.
 - Interactive elements with glow effects in dark mode.
-- Click the home-image/picture where it will have a dim-lights around it. You can click 4 times and it will become brighter every click but if it reach its over the limit of 4, the dim-lights will turn off.  
+- Click the home image/picture to toggle dim lights around it. You can click up to 4 times to increase brightness, but if it exceeds the limit, the dim lights will turn off.
 
 ### **2. About Section**
 - A brief introduction about myself.
 - Responsive layout with an image and text content.
-- The container and image have its own hover effect.
+- The container and image have hover effects.
 
 ### **3. Skills Section**
 - Circular skill indicators with hover effects.
 - Vibrant gradients and animations to highlight my expertise.
 
 ### **4. Education Section**
-- Timeline layout showcasing my educational background with hover effect.
+- Timeline layout showcasing my educational background with hover effects.
 - Fully responsive design for all screen sizes.
 
 ### **5. Hobbies Section**
@@ -29,11 +29,18 @@ This project is a **personal website** designed to showcase my skills, projects,
 
 ### **6. Contact Section**
 - A contact form with validation and SweetAlert popups for submission confirmation.
-- There is a glow and scale effect of the input area when its focus on their area.
+- Input fields have a glow and scale effect when focused.
 
 ### **7. Footer**
 - Social media links and contact information.
 - Fully responsive design for all devices.
+
+### **8. Dark Mode**
+- A toggle button to enable dark mode.
+- Includes a **parallax star background** in dark mode, with stars that float and glow dynamically.
+
+### **9. Loading Screen**
+- A **3-dot loading animation** appears before the website is displayed, with a smooth fade-out transition after 3 seconds.
 
 ---
 
@@ -50,28 +57,40 @@ This project is a **personal website** designed to showcase my skills, projects,
 1. **Clone the Repository**:
    ```bash
    git clone https://menes1908.github.io/website/
+   ```
 
 2. **Navigate to the Project Directory**:
-cd website
+   ```bash
+   cd website
+   ```
 
 3. **Open the Project**:
-- Open the index.html file in your browser to view the website.
+   - Open the `index.html` file in your browser to view the website.
+
+---
 
 ## **Instructions for Viewing**
 1. Ensure you have an internet connection to load external libraries (e.g., Bootstrap, SweetAlert2).
 2. Open the website in any modern browser (e.g., Chrome, Firefox, Edge).
 3. For the best experience:
-        - View the website on different devices (laptop, tablet, mobile) to see its responsiveness.
-        - Toggle the dark mode feature to explore the interactive glow effects.
+   - View the website on different devices (laptop, tablet, mobile) to see its responsiveness.
+   - Toggle the dark mode feature to explore the interactive glow effects and parallax star background.
+   - Interact with the home image to see the dim light toggle effect.
+   - Observe the loading screen animation when refreshing the page.
 
-**Additional Notes**
+---
+
+## **Additional Notes**
 - The website is fully responsive and optimized for various screen sizes, including laptops, tablets, and mobile devices.
 - The contact form includes validation and a confirmation popup using SweetAlert2.
 - Social media links are functional and open in new tabs.
+- The dark mode includes a parallax star background for an immersive experience.
 
-**Contact**
+---
+
+## **Contact**
 If you have any questions or suggestions, feel free to reach out:
 
-Email: jmbmaines17@gmail.com
-Phone: 0991-878-4260 | 0956-067-0720
-GitHub: menes1908
+- **Email**: jmbmaines17@gmail.com
+- **Phone**: 0991-878-4260 | 0956-067-0720
+- **GitHub**: [menes1908](https://github.com/menes1908)
