@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Maines Website</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="website.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    </head>
+
+    <body >
+        <!-- NAV BAR //--->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a href="#home" class="logo"><span>Meners</span></a>
+        
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-items"
+                        aria-controls="navbar-items"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbar-items">
+                        
+                        <ul class="navbar-nav ms-auto">
+                            
+                            <li class="navi"><a href="#home" class="nav-link fs-5 ">Home</a></li>
+                            <li class="navi"><a href="#about" class="nav-link fs-5">About</a></li>
+                            <li class="navi"><a href="#skills" class="nav-link fs-5">Skills</a></li>
+                            <li class="navi"><a href="#education" class="nav-link fs-5">Education</a></li>
+                            <li class="navi"><a href="#hobbies" class="nav-link fs-5">Hobbies</a></li>
+                            <li class="navi"><a href="#contact" class="nav-link fs-5">Contact</a></li>
+                        </ul>
+
+                        <button id="dark-mode-toggle" class="btn btn-dark-mode ms-3">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- HOME //-->
+        <section id="home">
+            <div class="container-fluid text-center" id="home-container">
+                <div class="row align-items-center" id="home-row">
+                    <div class="col-md-4 col-sm-12" id="home-image-container">
+                        <div class="image-background1"></div>
+                        <div class="image-background2"></div>
+                        <img src="./images/home.jpg" class="rounded-circle img-fluid mx-5" alt="" id="home-image" />
+                    </div>
+        
+                    <div class="col-md-8 col-sm-12" id="home-content">
+                        <h2 id="text-start">Hello, I'm</h2>
+        
+                        <div id="text-animation-container">
+                            <div id="text-animation-wrapper">
+                                <h1 id="text-animation"><span>Brian Maines</span></h1>
+                            </div>
+                        </div>
+        
+                        <h3 id="text-end">IT Student</h3>
+                        <p id="text-p"><strong>⚬⚬</strong> I debug life one line at a time — explore the madness.<strong>⚬⚬</strong></p>
+
+                        <div id="social-icons">
+                            
+                            <a href="https://www.facebook.com/brian.maines.atyourservice04/" target="_blank" class="social-link facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@_jepitot/video/7433668501237206289" target="_blank" class="social-link tiktok">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                            <a href="https://www.instagram.com/bronny/" target="_blank" class="social-link instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://x.com/brianmaaiiines" target="_blank" class="social-link twitter">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="https://github.com/menes1908" target="_blank" class="social-link github">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-link linkedin">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            
+                        </div>
+
+                        <div class="col-md-12 col-sm-12" id="button-container">
+                        <a href="#about" class="animated-button">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- ABOUT //-->
+        <section id="about">
+            <div class="container-fluid text-center" id="about-container">
+                <div class="row align-items-center" id="about-row">
+                    <h2>About Me</h2>
+                    <div class="col-md-12 col-sm-12" id="about-content">
+                        
+                        <p>I'm <strong>Brian Maines</strong>, a second-year IT student in NU-Lipa with a strong passion for technology and hands-on learning. So far, I’ve explored various programming languages like <strong>Java, C++, and MySQL</strong>, and have built several projects using <strong>HTML, CSS, and Android Studio</strong>. I enjoy the process of solving real-world problems through code and seeing my ideas come to life through apps and systems.</p> 
+                        <p>Every project I take on helps me sharpen my skills, explore new tools, and stay updated with the latest trends in tech. I’m always excited to learn more, take on new challenges, and grow as a future IT professional.</p>
+                    </div>
+        
+                    <div class="col-md-8 col-sm-7" id="about-image-container">
+                        <img src="./images/about.jpg" class="rounded-circle img-fluid" alt="" id="about-image" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS // -->
+        <section id="skills">
+
+            <div class="row align-items-center" id="skills-main">
+                <div class="skills-background1"></div>
+                <div class="skills-background2"></div>
+                <h2>Skills</h2>
+            </div>
+            <div class="container-fluid text-center" id="skills-content">
+
+                
+                <div id="skills-row">
+
+                    <div class="skill-circle">
+                        <i class="fas fa-code"></i>
+                        <p>Front-End Development</p>
+                    </div>
+                    <div class="skill-circle">
+                        <i class="fas fa-paint-brush"></i>
+                        <p>UX/UI Design</p>
+                    </div>
+                    <div class="skill-circle">
+                        <i class="fas fa-image"></i>
+                        <p>Graphic Design</p>
+                    </div>
+                    <div class="skill-circle">
+                        <i class="fas fa-server"></i>
+                        <p>Back-End Development</p>
+                    </div>
+
+                    <div class="skill-circle">
+                        <i class="fas fa-clock"></i>
+                        <p>Time Management</p>
+                    </div>
+
+                    <div class="skill-circle">
+                        <i class="fas fa-sync-alt"></i>
+                        <p>Adaptability</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION // -->
+        <section id="education" class="py-5">
+    <div id="education-container" class="container-fluid text-center">
+        <h2 class="text-center mb-5" id="education-main">Education</h2>
+
+        <div class="timeline">
+            <ul>
+                <!-- COLLEGE -->
+                <li id="college">
+                    <h3 class="title">COLLEGE</h3>
+                    <h5 class="school">National University-Lipa</h5>
+                    <h6 class="program">Infromation Technology</h6>
+                    <h6 class="year">2023-2024</h6>
+                    <p>Consistent Dean's Lister AY 23-24</p>
+                    <span class="circle"></span>
+                </li>
+
+                <!-- SENIOR HIGH SCHOOL -->
+                <li id="shs">
+                    <h3 class="title">SENIOR HIGH SCHOOL</h3>
+                    <h5 class="school">Holy Trinity School of Padre Garcia, Bats., Inc</h5>
+                    <h6 class="program">Science, Technology, Engineering, and Mathematic</h6>
+                    <h6 class="year">2021-2023</h6>
+                    <p>Consistent w/ Honors (Grade 11 & 12)</p>
+                    <span class="circle"></span>
+                </li>
+
+                <!-- JUNIOR HIGH SCHOOL -->
+                <li id="jhs">
+                    <h3 class="title">JUNIOR HIGH SCHOOL</h3>
+                    <h5 class="school">Holy Trinity School of Padre Garcia, Bats., Inc</h5>
+                    <h6 class="year">2017-2021</h6>
+                    <p>w/ Honors (Grade 8, 9, 10)</p>
+                    <span class="circle"></span>
+                </li>
+
+                <!-- ELEMENTARY -->
+                <li id="elem">
+                    <h3 class="title">ELEMENTARY</h3>
+                    <h5 class="school">Touching Minds Learning Center</h5>
+                    <h6 class="year">2011-2017</h6>
+                    <p>w/ Honors (Grade 1-6)</p>
+                    <span class="circle"></span>
+                </li>
+
+            </ul>
+        </div>
+    
+    </div>
+        </section>
+
+        <!-- HOBBIES // -->
+         <section id="hobbies">
+            <div class="container-fluid text-center" id="hobby-contents">
+                <h2 class="hobby-main">Hobby</h2>
+
+                <div class="hobby-container">
+
+                    <div class="hobby-card1">
+                        <div class="hobby1">
+                            <div class="content">
+                            <h2 class="card-title">Gaming</h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="hobby-card2">
+                        <div class="hobby2">
+                            <div class="content">
+                            <h2 class="card-title">Playing Ball Games</h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="hobby-card3">
+                        <div class="hobby3">
+                            <div class="content">
+                            <h2 class="card-title">Travel</h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="hobby-card4">
+                        <div class="hobby4">
+                            <div class="content">
+                            <h2 class="card-title">Watching TV Series</h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="hobby-card5">
+                        <div class="hobby5">
+                            <div class="content">
+                            <h2 class="card-title">Exercise</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                   
+
+                </div>
+
+
+            </div>
+
+         </section>
+
+         <!-- CONTACT // -->
+         <section id="contact" class="container-fluid">
+            <div class="contact-wrapper">
+                <div id="contact-container">
+                    <h2 class="contact-main">Contact Me</h2>
+                    <p class="caption">Got something in mind? Don’t be shy — send me a message and let’s make it happen!</p>
+                    <div class="contact-contents">
+                        <form action="">
+                            <div class="top-content">
+                                <div class="form-floating mb-3 flex-fill">
+                                    <input type="name" class="form-control" name="name" id="name" placeholder="Enter your first name" required />
+                                    <label for="name" class="form-label">Name</label>
+                                </div>
+        
+                                <div class="form-floating mb-3 flex-fill">
+                                    <input type="subject" class="form-control" name="subject" id="Subject" placeholder="Enter subject" required />
+                                    <label for="subject" class="form-label">Subject</label>
+                                </div>
+                            </div>
+        
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" name="email" id="Email" placeholder="Enter your email" required />
+                                <label for="email" class="form-label">Email</label>
+                            </div>
+        
+                            <div>
+                                <textarea id="message" rows="5" placeholder="Enter a message (Required)" required></textarea>
+                            </div>
+        
+                            <button class="submit-btn" id="submit-btn" type="button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- FOOTER // -->
+         <footer id="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Meners. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/brian.maines.atyourservice04/" target="_blank" class="social-link facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@_jepitot/video/7433668501237206289" target="_blank" class="social-link tiktok">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                    <a href="https://www.instagram.com/bronny/" target="_blank" class="social-link instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://x.com/brianmaaiiines" target="_blank" class="social-link twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://github.com/menes1908" target="_blank" class="social-link github">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link linkedin">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+
+                <div class="contact-info">
+                    <p>
+                        <i class="bi bi-telephone-fill"></i> 0991-878-4260 | 0956-067-0720
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-fill"></i> jmbmaines17@gmail.com
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <!-- typing -->
+        <script>
+            const words = ["Brian Maines ", "Menes ", "Meners ", "Decimo ", "JMB "];
+            const textElement = document.getElementById("text-animation");
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+        
+            function typeEffect() {
+                const currentWord = words[wordIndex];
+        
+                // Handle typing or deleting
+                const displayedText = isDeleting
+                    ? currentWord.substring(0, charIndex--)
+                    : currentWord.substring(0, charIndex++);
+        
+                textElement.textContent = displayedText;
+        
+                // Adjust typing speed
+                let typingSpeed = isDeleting ? 100 : 150;
+        
+                // When word is fully typed
+                if (!isDeleting && charIndex === currentWord.length) {
+                    setTimeout(() => {
+                        isDeleting = true; // Start deleting after the pause
+                        typeEffect(); // Continue the effect
+                    }, 2000); // 2-second pause
+                    return; // Exit to prevent further execution
+                }
+        
+                // When word is fully deleted
+                if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length; // Move to the next word
+                }
+        
+                setTimeout(typeEffect, typingSpeed);
+            }
+        
+            // Start the typing effect
+            typeEffect();
+        </script>
+
+        <!-- darkmode -->
+        <script> 
+            function enableDarkMode() {
+                document.body.classList.add('dark-mode');
+                document.querySelectorAll('section, header, footer, .nav-link, .navi, #dark-mode-toggle, .card-title, .form-control, textarea, label, .submit-btn, .social-link, .timeline, .skill-circle, .contact-main, .caption, .logo, .image-background1,.image-background2, #home-image, #text-animation-container, #text-animation, .animated-button, #about-row,#about-row h2, #about-image, .skills-background1, .skills-background2, .timeline, .circle, .timeline ul li, .card-title, #contact-container, .contact-wrapper, .contact-main').forEach(el => {
+                    el.classList.add('dark-mode');
+                });
+                document.getElementById('dark-mode-toggle').innerHTML = '<i class="bi bi-brightness-high-fill"></i>';
+                localStorage.setItem('dark-mode', 'enabled');
+            }
+            
+            function disableDarkMode() {
+                document.body.classList.remove('dark-mode');
+                document.querySelectorAll('section, header, footer, .nav-link, .navi, #dark-mode-toggle, .card-title, .form-control, textarea, label, .submit-btn, .social-link, .timeline, .skill-circle, .contact-main, .caption, .logo, .image-background1,.image-background2, #home-image, #text-animation-container, #text-animation, .animated-button, #about-row,#about-row h2, #about-image, .skills-background1, .skills-background2, .timeline, .circle, .timeline ul li, .card-title, #contact-container, .contact-wrapper, .contact-main').forEach(el => {
+                    el.classList.remove('dark-mode');
+                });
+                document.getElementById('dark-mode-toggle').innerHTML = '<i class="bi bi-moon-stars-fill"></i>';
+                localStorage.setItem('dark-mode', 'disabled');
+            }
+            
+            // Check saved preference
+            if (localStorage.getItem('dark-mode') === 'enabled') {
+                enableDarkMode();
+            }
+            
+            document.getElementById('dark-mode-toggle').addEventListener('click', function () {
+                if (document.body.classList.contains('dark-mode')) {
+                    disableDarkMode();
+                } else {
+                    enableDarkMode();
+                }
+            });
+        </script>
+        <!-- active section -->
+        <script>
+            const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('section');
+const logo = document.querySelector('.logo');
+
+// Function to update active link based on scroll position
+function updateActiveLink() {
+    let currentSection = '';
+
+    // Determine the current section in view
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100; // Adjust for navbar height
+        if (window.scrollY >= sectionTop) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    // Remove 'active' class from all links and add it to the current section's link
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === currentSection) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Add scroll event listener to update active link
+window.addEventListener('scroll', updateActiveLink);
+
+// Add click event listener to the logo to activate the "Home" link
+logo.addEventListener('click', () => {
+    navLinks.forEach(link => link.classList.remove('active'));
+    document.querySelector('.nav-link[href="#home"]').classList.add('active');
+});
+        </script>
+        <!-- click -->
+        <script>
+            // Select the home image
+const homeImage = document.getElementById('home-image');
+
+// Initialize a counter to track clicks
+let clickCount = 0;
+
+// Add click event listener to the home image
+homeImage.addEventListener('click', () => {
+    // Check if dark mode is enabled
+    if (!document.body.classList.contains('dark-mode')) return;
+
+    clickCount = (clickCount + 1) % 5; // Cycle through 0, 1, 2, 3
+
+    // Remove all glow classes
+    homeImage.classList.remove('glow-dim', 'glow-medium', 'glow-bright', 'glow-brighter');
+
+    // Add the appropriate glow class based on the click count
+    if (clickCount === 1) {
+        homeImage.classList.add('glow-dim');
+    } else if (clickCount === 2) {
+        homeImage.classList.add('glow-medium');
+    } else if (clickCount === 3) {
+        homeImage.classList.add('glow-bright');
+    } else if (clickCount === 4) {
+        homeImage.classList.add('glow-brighter');
+    }
+    // On the 4th click (clickCount === 0), the glow turns off (no class added)
+});
+        </script>
+        <!-- sweet alert -->
+        <script>
+            document.getElementById('submit-btn').addEventListener('click', function () {
+                // Get form inputs
+                const name = document.getElementById('name').value.trim();
+                const subject = document.getElementById('Subject').value.trim();
+                const email = document.getElementById('Email').value.trim();
+                const message = document.getElementById('message').value.trim();
+        
+                // Validate inputs
+                if (!name || !subject || !email || !message) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Please fill out all the required fields!',
+                       
+                    });
+                    return;
+                }
+        
+                // Show confirmation popup
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "Do you want to submit the form?",
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, submit it!',
+                    cancelButtonText: 'No, cancel',
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Show success message
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Submitted!',
+                            text: 'Your form has been successfully submitted.',
+                        });
+        
+                        // Optionally, you can reset the form here
+                        document.querySelector('form').reset();
+                    }
+                });
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
